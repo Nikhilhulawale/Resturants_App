@@ -1,0 +1,118 @@
+.footer {
+  background: url("https://preview.colorlib.com/theme/allfood/assets/img/gallery/footer_bg.jpg")
+    no-repeat center center/cover;
+  color: #fff;
+  padding: 60px 20px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.footer-logo img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+.footer-logo p {
+  font-size: 14px;
+  color: #ddd;
+}
+
+
+.footer-nav h4,
+.footer-links h4,
+.footer-insta h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.footer-nav ul,
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-nav li,
+.footer-links li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #ddd;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer-nav li:hover,
+.footer-links li:hover {
+  color: #ff4a17;
+}
+
+
+.insta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.insta-grid img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 40px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 17px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #bbb;
+}
+
+.footer-bottom a {
+  color: #ff4a17;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: 14px;
+  color: #fff;
+}
+.social-icons svg {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.social-icons svg:hover {
+  color: #ff4a17;
+}
+
+
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom {
+  text-align: center;
+  font-weight: bold;
+
+  }
+}

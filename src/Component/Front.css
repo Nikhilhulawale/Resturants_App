@@ -1,0 +1,77 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("https://preview.colorlib.com/theme/allfood/assets/img/hero/h1_hero.png") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: transparent; 
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.subtitle {
+  color: #ff6600;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.hero-content h1 {
+  font-size: 56px;
+  font-weight: 800;
+  color: #111;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.btn-reserve {
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-reserve:hover {
+  background: #e55a00;
+}
+@media (max-width: 480px) {
+  .menu-header h2 {
+    font-size: 20px;
+  }
+  .menu-tabs button {
+    font-size: 14px;
+    padding: 6px 16px;
+  }
+  .menu-card .overlay h3 {
+    font-size: 16px;
+  }
+  .menu-card .overlay .price {
+    font-size: 16px;
+  }
+}

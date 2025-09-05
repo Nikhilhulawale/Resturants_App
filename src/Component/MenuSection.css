@@ -1,0 +1,188 @@
+.menu { 
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.menu-header .subtitle {
+  color: #e63946;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu-header h2 {
+  margin: 10px 0 20px;
+  font-size: 28px;
+}
+
+
+.menu-tabs {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.menu-tabs button {
+  position: relative;
+  padding: 8px 20px;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+.menu-tabs button.active {
+  background: #453394;
+  color: #fff;
+  font-weight: 600;
+}
+
+.menu-tabs button.active::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #453394;
+}
+
+
+.collage {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1fr;
+  gap: 0;
+  grid-auto-rows: 500px;
+}
+
+.collage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  display: block;
+}
+
+.collage .right {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 0;
+}
+
+
+.menu-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-card img {
+  transition: transform 0.4s ease;
+}
+
+.menu-card:hover img {
+  transform: scale(1.1);
+}
+
+.menu-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  text-align: center;
+  padding: 10px;
+}
+
+.menu-card:hover .overlay {
+  opacity: 1;
+}
+
+.menu-card .overlay h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.menu-card .overlay p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.menu-card .overlay .price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.menu-card .overlay button {
+  padding: 6px 14px;
+  border: none;
+  background: #ff5a1f;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.menu-card .overlay button:hover {
+  background: #e63946;
+}
+
+@media (max-width: 1024px) {
+  .collage {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 350px;
+  }
+  .collage .right {
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .collage {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 300px;
+  }
+  .menu-header h2 {
+    font-size: 22px;
+  }
+  .menu-tabs {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .hero-content h1 {
+    font-size: 28px;
+  }
+  .hero-content p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-header h2 {
+    font-size: 20px;
+  }
+  .menu-tabs button {
+    font-size: 14px;
+    padding: 6px 16px;
+  }
+  .menu-card .overlay h3 {
+    font-size: 16px;
+  }
+  .menu-card .overlay .price {
+    font-size: 16px;
+  }
+}

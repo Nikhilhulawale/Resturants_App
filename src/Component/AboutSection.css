@@ -1,0 +1,86 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  background: #fff;
+  gap: 50px;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.subtitle {
+  color: #ff6600;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.about-content h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #111;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.feature-icon {
+  font-size: 22px;
+  color: #ff6600;
+  flex-shrink: 0;
+}
+
+.feature-item p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+@media (max-width: 480px) {
+  .menu-header h2 {
+    font-size: 20px;
+  }
+  .menu-tabs button {
+    font-size: 14px;
+    padding: 6px 16px;
+  }
+  .menu-card .overlay h3 {
+    font-size: 16px;
+  }
+  .menu-card .overlay .price {
+    font-size: 16px;
+  }
+}
