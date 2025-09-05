@@ -1,5 +1,5 @@
 import React from "react";
-import "./front.css";
+import "./Front.css";
 
 const Front = () => {
   return (
